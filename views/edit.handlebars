@@ -1,0 +1,8 @@
+<div style="margin-top:10%;"><div style="background-color:maroon;"><div style="text-align:center;"><h1>Editar produto</h1>
+{{#each produt}}
+ <form method="POST" action="/editar/{{dataValues.id}}">
+  <input type="text" name="nomeed" value="{{dataValues.nome}}"></input>
+  <input type="number" name="proded" value="{{dataValues.quantidades}}"></input>
+  <button type="submit">salvar</button><a href="/"><br><button style="margin-top:2%;">Cancelar</button></a>
+ </form>
+{{/each}}</div></div>

@@ -1,0 +1,8 @@
+ <div style="text-align: center;"><h1>Lista de Produtos:</h1>
+ <a href="/add"><button>Adiciona produto</button></a>
+{{#each produtos}}
+ <h3 style="color: saddlebrown;">{{dataValues.nome}}</h3> 
+ <h3 style="color: midnightblue;">Qt: {{dataValues.quantidades}}</h3>
+ <a href="/edit/{{dataValues.id}}"><button >Editar</button></a>
+ <a href="/deletar/{{dataValues.id}}"><button style="margin-left:15%;">Deletar</button></a><hr>{{!-- Aqui passo o id como parametro, para ser deletado na rora --}}
+{{/each}}</div>
