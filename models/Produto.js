@@ -10,9 +10,9 @@ const Produto = db.sequelize.define('produtos',{
 module.exports = Produto
 
 
-// Produto.sync({force:true})//gerar tabela, executar uma vez e comenta, para que rescreva a tabela
+Produto.sync({force:true})//gerar tabela, executar uma vez e comenta, para que rescreva a tabela
 
-// Produto.create({//ex: como provoar tabela
-//     nome:'arroz',
-//     quantidades:25
-// })
+Produto.create({//ex: como provoar tabela
+    nome:'arroz',
+    quantidades:25
+})
