@@ -3,6 +3,7 @@ const app = express();
 const Produto = require('./models/Produto');
 const handlebars = require('express-handlebars');
 const bodyParser = require('body-parser')
+const PORT = process.env.PORT || 8081 //caso a variavel de ambiente não esteja desponivel, pegará a porta 8081 como padrão
 //config Template engine
 app.engine('handlebars', handlebars({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
@@ -61,7 +62,7 @@ app.get('/edit/:id',function(req,res){//editando produto
     })
 })
 
-app.listen(8081,function(){
+app.listen(PORT ,function(){
     console.log("Servidor rodando na porta 8081")
 })
 
