@@ -1,5 +1,5 @@
 //conexao ao banco de dados
-// const password = require('./senha')
+const password = require('./senha')
 const Sequelize = require('sequelize');
 let sequelize;
 if(process.env.NODE_ENV == "production"){
